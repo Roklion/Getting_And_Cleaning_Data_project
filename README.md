@@ -22,3 +22,12 @@ An example of the directory tree is as the following:
 ./README.md  
 ./UCI HAR Dataset/README.txt  
 ......
+
+## Output
+The output of the script is a table of mean values with 180 observations and 67 variables in .txt format. 
+The table can be extracted from R by read.table(path_to_file, header=TRUE)
+
+Each observation represents a unique combination of 1 of 6 activity types and 1 of 30 subjects.
+The first two columns of the table represent activity types and subject numbers, the rest 65 columns are the means of measurements (means or standard deviations) obtained from original data files.
+
+See CookBook.md for more detils on descriptions of variables.
